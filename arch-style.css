@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bree+Serif&family=Poppins&family=Righteous&family=Yantramanav&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Archivo+Black&family=Bree+Serif&family=Bruno+Ace+SC&family=Poppins&family=Righteous&family=Yantramanav&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+#main{
+    background-image: url(images/bg-1.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: .9;
+    overflow: hidden;
+    position: relative;
+}
+#navbar1{
+    display: flex;
+    justify-content: space-between;
+    background-color: white; 
+    width: 100%;
+    height: 65px;
+    padding: 0 20px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+#header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+li{
+    padding: 10px;
+}
+#nav-link{
+    font-weight: bold;
+    border: 2px solid transparent;
+    color: black
+}
+#nav-link:hover{
+    border-bottom: 2px solid crimson;
+    color: crimson;
+    transition: .2s;
+}
+
+#col1{
+    min-height: 100vh;
+    color:black;
+    padding: 20px;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: first-animate 1s 1 linear;
+}
+@keyframes first-animate{
+    from{
+        transform: translateY(300px);
+    }
+}
+#col1 .row h1{
+    text-align: justify;
+    font-size: 45px;
+}
+#num-count{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 50px;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: none;
+    box-shadow: 10px 10px 5px 0 lightslategray;
+}
+#num-count .num{
+    font-size: 35px;
+    color: green;
+    font-weight: bolder;
+}
+#num-count span{
+    font-weight: bolder;
+}
+#scrolltop{
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: crimson;
+    padding: 10px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 1000;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+
+
+
+
+
+#sec1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#index{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 100px;
+}
+#index h3{
+    color: green;
+    border-bottom: 2px solid black;
+    font-weight: 600;
+}
+#index .p1{
+    font-size: 22px;
+    color: darkslategrey;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#index .p2,.p3{
+    font-size: 20px;
+    text-indent: 30px;
+    color: gray;
+    text-align: justify;
+    font-family: 'Aoboshi One', serif;
+}
+#index{
+    transition: .5s linear;
+}
+#img-4{
+    transition: .5s linear;
+}
+#sec2{
+    margin-top: 30px;
+    background-color: #f8f9fa;
+    overflow: hidden;
+}
+/*
+#index{
+    overflow: hidden;
+    animation: contentbox 1s 1 linear ; 
+}
+@keyframes contentbox{
+    from{
+       transform: translateX(-500px) ;
+    }
+}
+#img-4{
+    animation: img-box 1s 1 linear;
+}
+@keyframes img-box{
+    from{
+        transform: translateX(500px);
+    }
+}*/
+#sec1 .row img{
+    margin-top: 20px;
+    height: 150px;
+    width: 150px;
+}
+#sec1 .row .card-body{
+    margin-top: 10px;
+}
+
+.card1 .card-text{
+    color: grey;
+    text-align: justify;
+}
+.card2 .card-text{
+    color: grey;
+    text-align: justify;
+}
+.card3 .card-text{
+    color: grey;
+    text-align: justify;
+}
+.card1,.card2,.card3{
+    border: none;
+    background-color: #f8f8f8;
+}
+.card1,.card2,.card3 .btn{
+    width: 200px;
+}
+.card1:hover{
+   border: 1px solid green;
+   background-color: rgb(213, 250, 213);
+   border-radius: 2%;
+   transition: .3s;
+   box-shadow: 10px 10px 5px 0,
+               -10px 10px 5px 0;
+}
+.card2:hover{
+    border: 1px solid green;
+    background-color: rgb(213, 250, 213);
+    border-radius: 2%;
+    transition: .3s;
+    box-shadow: 10px 10px 5px 0,
+                -10px 10px 5px 0;
+}
+.card3:hover{
+    border: 1px solid green;
+    background-color: rgb(213, 250, 213);
+    border-radius: 2%;
+    transition: .3s;
+    box-shadow: 10px 10px 5px 0,
+                -10px 10px 5px 0;
+}
+#owl-carousal{
+    padding-top: 30px;
+    background-color: #f1f1ff;
+}
+#sec3{
+    margin-top: 50px;
+}
+#sec3 .para-1{
+     font-size: 20px;
+     color: darkred;
+     border-bottom: 2px solid lightslategray;
+     font-weight: bold;
+}
+#sec3 .para-2{
+    font-weight: bold;
+    color: black;
+    
+}
+
+.architecters{
+    width: 100%;
+    height: 100%;
+}
+.architecters .row .d-flex h3{
+    color: darkgreen;
+    padding-bottom: 5px ;
+    border-bottom: 3px solid orangered;
+}
+#c1{   
+    position: relative;
+    border: none;
+    margin: 10px;
+    box-shadow: 10px 10px 5px 0 lightslategray;
+    border-radius: 0;
+    cursor: pointer;
+}
+#c1 .img-rad{
+    border-radius: 0%;
+}
+#c1 div{
+    position: absolute;
+    height: 100%;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+#c1 div h6{
+    color: darkgreen;
+}
+#c1 div p{
+    text-align: center;
+    color: gray;
+}
+#c1 div:hover{
+    transition: .5s linear;
+    opacity: 1;
+}
+
+#testimonials{
+    padding: 40px 0;
+    background-color: #f1f1ff;
+    color: #434343;
+    text-align: center;
+}
+.inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+.border{
+    width: 180px;
+    height: 5px;
+    background-color: #6ab04c;
+    margin: 20px auto;
+}
+#testimonials .row{
+    padding: 30px;
+    padding-top: 0;
+}
+#testimonials .row .col-4{
+    margin: 10px;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px ;
+}
+#testimonials .row .col-4 .name{
+   margin-top: 10px;
+}
+#testimonials .row .col-4 .stars{
+  margin-top: 10px;
+}
+#testimonials .row .col-4 p{
+  margin-top: 10px;
+}
+#testimonials img{
+    margin-top: 25px;
+    border-radius: 50%;
+}
+#card-blog{
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+#card-blog .blog-date{
+    position: absolute;
+    height: 30px;
+    width: 130px;
+    top: -15px;
+    left: 15px;
+    color: black;
+    font-weight: bolder;
+}
+#card-blog .card-footer{
+    border: none;
+    background-color: white;
+}
+#cmd-link{
+    text-decoration: none;
+    color: rgb(103, 103, 103);
+}
+#card-blog img{
+   display: block;
+   transition: 1s linear;
+}
+#card-blog .image{
+    height: 260px;
+    overflow: hidden;
+}
+#card-blog img:hover{
+  transform: scale(1.1);
+}
+#btn-blog{
+    height: 35px;
+    width: 100px;
+    padding: 2px;
+    background-color: #fdb82c;
+    color: white;
+    font-weight: 600;
+    border: 2px solid #fdb82c;
+    border-radius: 5px;
+}
+#btn-blog:hover{
+    background-color: white;
+    color: #fdb82c;
+}
+.form-control{
+    position: relative;
+    border: none;
+    margin-bottom: 20px;
+}
+.contact-block{
+    width: 90%;
+    background-color: #f8f9fa;
+}
+.form-control{
+    background-color: #f8f9fa;
+}
+input{
+    width: 100%;
+    height: 35px;
+    display: block;
+    border: 2px solid #ccc;
+    padding: 10px;
+   
+    border-radius: 5px;
+}
+input:focus{
+    outline: none;
+    border-color: #777;
+}
+textarea{
+    border: 2px solid #ccc;
+    width: 100%;
+    height: 130px;
+    padding: 10px;
+    border-radius: 5px;
+}
+textarea:focus{
+    outline: none;
+    border-color: #777;
+}
+#snd-msg{
+    width: 130px;
+    height: 38px;
+    padding: 5px;
+    background-color: #fdb82c;
+    color: white;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    border: 2px solid #fdb82c;
+    border-radius: 5px;
+}
+#snd-msg:hover{
+    background-color: white;
+    color: #fdb82c;
+}
+#con-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    width: 250px;
+    height: 300px;
+    box-sizing: border-box;
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+#con-detail div:first-child{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+}
+#con-detail div:last-child{
+    text-align: center;
+}
+
+.logo{
+    text-align: center;
+}
+.logo h5{
+    font-family: 'Bruno Ace SC';
+    text-shadow: -3px 0 0 rgba(255, 0, 0, .5),
+                  3px 0 0 rgba(0, 255, 255, .5);
+    color: white;
+    margin-top: 40px;
+    font-weight: bold;
+}
+#footer{
+    background: url(images/footer-bg.jpg);
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    margin-top: 40px;
+    margin-bottom: 0;
+
+}
+#footer-col1 p{
+    font-family: 'Poppins', sans-serif;
+    color: white; 
+    margin-top: 35px;
+    font-size: 14px;
+    text-indent: 25px;
+    font-weight: 600;
+    text-align: justify;
+    margin-left: 5px;
+    padding: 5px;
+}
+#footer-col{
+    width: 260px;
+    height: 250px;
+    color: white;
+    box-sizing: border-box;
+    margin: 6px;
+    padding: 10px;
+}
+
+#footer-col1 ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: white;
+    background-color: #434343;
+    padding: 4px;
+}
+#footer-col1 ul li a small{
+    font-size: 20px;
+}
+#footer-col1 ul li a:hover {
+    background-color: white;
+    color: black;
+}
+#footer-col2{
+    width: 200px;
+    height: 250px;
+    color: white;
+    box-sizing: border-box;
+    margin: 10px;
+    margin-left: 30px;
+    padding: 10px;
+}
+#footer-col2 h4{
+    text-indent: 20px;
+    margin-bottom: 30px;
+}
+#footer-col2 ul{
+    margin-left: 10px;
+}
+#footer-col2 ul li a{
+    margin-left: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+#footer-col2 ul li:hover{
+    transform: translate(5px);
+    color: crimson;
+}
+#footer-col h4{
+    text-indent: 20px;
+    margin-bottom: 30px;
+}
+#footer-col ul{
+    margin-left: 10px;
+}
+#footer-col ul li a small{
+    margin: 0;
+    color: white;
+}
+#footer-col ul li a small:hover{
+    color: crimson;
+    transform: translate(0);
+}
+#footer-col ul li a{
+    margin-left: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+#footer-col ul li:hover{
+    transform: translate(5px);
+    color: crimson;
+}
